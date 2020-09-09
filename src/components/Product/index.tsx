@@ -1,8 +1,10 @@
 import React from 'react';
 
 import tshirtImage from '../../assets/tshirt.png';
+import SellerInfo from '../SellerInfo';
 
 import { Container, Row, Panel, Column, Gallery, Section, Description } from './styles';
+import ProductAction from '../ProductAction';
 
 const Product: React.FC = () => {
   return (
@@ -22,8 +24,8 @@ const Product: React.FC = () => {
         </Column>
 
         <Column>
-          {/* <ProductAction /> */}
-          {/* <SellerInfo /> */}
+          <ProductAction />
+          <SellerInfo />
 
           <WarrantySection />
           <WarrantySection />
@@ -49,6 +51,8 @@ const WarrantySection = () => (
         <p className="description">sem garantia</p>
       </span>
     </div>
+
+    <a href="#">Saiba mais sobre garantia</a>
   </Section>
 )
 
